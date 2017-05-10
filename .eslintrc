@@ -1,0 +1,52 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "babel/generator-star-spacing": 1,
+    "babel/new-cap": 1,
+    "babel/array-bracket-spacing": 1,
+    "babel/object-curly-spacing": 0,
+    "babel/object-shorthand": 1,
+    "babel/arrow-parens": 1,
+    "babel/no-await-in-loop": 1,
+    "babel/flow-object-type": 1,
+    "babel/func-params-comma-dangle": 1,
+    "no-unused-expressions": ["error", { "allowShortCircuit": true }],
+    "no-underscore-dangle": ["error", { "allow": ["_DB", "_subdomain", "_token", "_username", "_password"] }],
+    "max-len": 0,
+    "eol-last": 0,
+    "no-shadow": 0,
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "react/prefer-es6-class": 0,
+    "react/jsx-space-before-closing": 0,
+    "arrow-parens": ["error", "always"],
+    "consistent-return": "off",
+    "comma-dangle": "off",
+    "no-use-before-define": "off",
+    "import/no-unresolved": ["error", { "ignore": ["electron"] }],
+    "import/no-extraneous-dependencies": "off",
+    "react/forbid-prop-types": 0,
+    "react/jsx-no-bind": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+    "react/prefer-stateless-function": "off",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "generator-star-spacing": "off"
+  },
+  "plugins": [
+    "babel",
+    "import",
+    "react"
+  ]
+}
